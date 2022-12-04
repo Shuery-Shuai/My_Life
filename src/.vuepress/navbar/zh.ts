@@ -30,17 +30,8 @@ export const zhNavbar = navbar([
         text: "应用",
         icon: "software",
         prefix: "应用/",
-        children: [
-          {
-            text: "云崽",
-            icon: "software",
-            prefix: "云崽/",
-            children: [
-              { text: "安装", icon: "software", link: "云崽安装教程.md" },
-            ],
-          },
-        ],
+        children: [{ text: "云崽", icon: "software", link: "云崽" }],
       },
     ],
-  }
+  },
 ]);

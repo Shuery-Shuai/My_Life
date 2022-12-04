@@ -137,7 +137,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
   >
   > **注意**：请在命令行输入 `ssh` 确保你的 Windows 安装了 OpenSSH。若没有安装，请前往“设置 > 应用 > 可选功能”添加可选功能 OpenSSH 客户端，或使用管理员权限打开 PowerShell 并输入 `DISM.exe /Online /Add-Capability /CapabilityName:OpenSSH.Client` 安装。
 
-  运行以下命令生成 `id_rsa` 文件（具体可以看[生成密钥对][def1]）：
+  运行以下命令生成 `id_rsa` 文件（具体可以看生成密钥对）：
 
   ```sh
   ssh-keygen -t rsa
@@ -159,7 +159,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
   在文件后添加如下内容：
 
-  ```
+  ```conf
   Host termux
     HostName 192.168.*.*
     Port 8022
@@ -167,7 +167,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
     IdentityFile ~/.ssh/id_rsa
   ```
 
-  > **注意**：`HostName` 为之前获取的 IP（看[这里][def2]），`User` 为之前获取的用户名（在[这里][def3]）。
+  > **注意**：`HostName` 为之前获取的 IP（看这里），`User` 为之前获取的用户名（在这里）。
 
 #### 使用连接
 
@@ -228,7 +228,7 @@ passwd
 adduser username
 ```
 
-之后出现 `New password` 输入密码即可（与[设置 Root 用户密码](#设置-Root-用户密码)类似）。
+之后出现 `New password` 输入密码即可（与[设置 Root 用户密码](#设置-root-用户密码)类似）。
 
 再之后就会让你输入用户信息，如下参考输入：
 

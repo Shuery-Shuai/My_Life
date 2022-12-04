@@ -1,8 +1,8 @@
 ---
-title: 大数据原理与应用
+title: 大数据技术
 icon: folder
 author: 锐毅
-date: 2022-10-22
+date: 2021-10-22 21:45:48
 category:
   - 学习
   - 计算机
@@ -15,4 +15,4 @@ tag:
 article: false
 ---
 
-- [data_analyse](data_analyse/)
+- [data_analyse](./data_analyse/)

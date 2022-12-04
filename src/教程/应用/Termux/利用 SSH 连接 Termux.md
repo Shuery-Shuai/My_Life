@@ -1,8 +1,13 @@
 ---
 title: 利用 SSH 连接 Termux
 date: 2022-10-03 15:29:50
-category: 应用 Termux
-tag: 教程 SSH Termux
+category:
+  - 应用
+  - Termux
+tag:
+  - 教程
+  - SSH
+  - Termux
 ---
 
 ## 下载 Termux

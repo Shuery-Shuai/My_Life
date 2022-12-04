@@ -2,7 +2,7 @@
 title: 大数据分析
 icon: page
 author: 锐毅
-date: 2022-10-22
+date: 2021-10-22 21:50:36
 category:
   - 学习
   - 计算机
@@ -17,7 +17,7 @@ tag:
 
 大数据分析。
 
-## [mian.py](main.py)
+## [main.py](main.py)
 
 ```py
 import csv

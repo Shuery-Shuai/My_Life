@@ -4,20 +4,33 @@ export const zhNavbar = navbar([
   "/",
   {
     text: "笔记",
-    icon: "edit",
+    icon: "note",
     prefix: "/笔记/",
     children: [
       {
         text: "大数据",
-        icon: "edit",
+        icon: "note",
         prefix: "大数据技术/",
-        children: [{ text: "大数据分析", icon: "edit", link: "data_analyse" }],
+        children: [{ text: "大数据分析", icon: "note", link: "data_analyse" }],
       },
       {
         text: "英语",
-        icon: "edit",
+        icon: "note",
         prefix: "英语/",
-        children: [{ text: "单词本", icon: "edit", link: "单词本" }],
+        children: [{ text: "单词本", icon: "note", link: "单词本" }],
+      },
+    ],
+  },
+  {
+    text: "攻略",
+    icon: "edit",
+    prefix: "/攻略/",
+    children: [
+      {
+        text: "游戏",
+        icon: "game",
+        prefix: "游戏/",
+        children: [{ text: "原神", icon: "software", link: "原神" }],
       },
     ],
   },

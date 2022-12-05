@@ -1,11 +1,17 @@
 ---
 title: Linux 新建用户
-date: 2022-10-07 11:54:47
-categories: 系统 Linux
-tags: 教程 Linux
+icon: linux
+description: Linux 系统新建用户。
+date: 2022-05-06 11:54:47
+categories:
+  - 系统
+  - Linux
+tags:
+  - 教程
+  - Linux
 ---
 
-## Debian 新建用户
+## 建立用户
 
 - 利用 `useradd`
 
@@ -19,15 +25,15 @@ useradd -m /home/username -s /bin/bash username
 adduser username
 ```
 
-## 设置为 sudo 组
+## 设置为超级用户组
 
-### Debian
+- Debian
 
 ```sh
 usermod -aG groupname username
 ```
 
-### Arch
+- Arch
 
 ```sh
 usermod -aG wheel username
@@ -37,6 +43,4 @@ usermod -aG wheel username
 vim /etc/sudoers
 ```
 
-/wheel
-
-取消注释
+使用 <kbd>/</kbd> 找到 `wheel` 行，取消此行注释。

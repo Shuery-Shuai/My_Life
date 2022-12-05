@@ -23,14 +23,14 @@ export const zhNavbar = navbar([
   },
   {
     text: "攻略",
-    icon: "edit",
+    icon: "blog",
     prefix: "/攻略/",
     children: [
       {
         text: "游戏",
         icon: "game",
         prefix: "游戏/",
-        children: [{ text: "原神", icon: "software", link: "原神" }],
+        children: [{ text: "原神", icon: "article", link: "原神" }],
       },
     ],
   },

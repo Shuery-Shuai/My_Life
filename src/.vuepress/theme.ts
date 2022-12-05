@@ -15,9 +15,9 @@ export default hopeTheme({
 
   logo: "/logo.svg",
 
-  repo: "Shuery-Shuai/Share_Blog",
+  repo: "Shuery-Shuai/Share_Life",
 
-  docsDir: "",
+  docsDir: "src",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 

@@ -147,7 +147,7 @@ rc-update add docker
 
 好用的快捷键：
 
-Ctrl+A X：退出虚拟机
-Ctrl+A H：切换 QEMU 控制台
+- <kbd>Ctrl</kbd> + <kbd>A</kbd> <kbd>X</kbd>：退出虚拟机
+- <kbd>Ctrl</kbd> + <kbd>A</kbd> <kbd>H</kbd>：切换 QEMU 控制台
 
 :::

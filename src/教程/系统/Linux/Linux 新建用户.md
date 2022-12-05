@@ -2,7 +2,7 @@
 title: Linux 新建用户
 icon: linux
 description: Linux 系统新建用户。
-date: 2022-05-06 11:54:47
+date: 2020-05-06 11:54:47
 category:
   - 系统
   - Linux

@@ -3,10 +3,10 @@ title: Linux 新建用户
 icon: linux
 description: Linux 系统新建用户。
 date: 2022-05-06 11:54:47
-categories:
+category:
   - 系统
   - Linux
-tags:
+tag:
   - 教程
   - Linux
 ---

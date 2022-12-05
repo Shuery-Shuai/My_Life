@@ -36,7 +36,7 @@ export const zhNavbar = navbar([
   },
   {
     text: "教程",
-    icon: "discover",
+    icon: "read",
     prefix: "/教程/",
     children: [
       {

@@ -10,13 +10,13 @@ export const zhSidebar = sidebar({
     },
     {
       text: "攻略",
-      icon: "edit",
+      icon: "blog",
       prefix: "攻略",
       children: "structure",
     },
     {
       text: "教程",
-      icon: "discover",
+      icon: "read",
       prefix: "教程",
       children: "structure",
     },

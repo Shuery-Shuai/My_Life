@@ -1,21 +1,25 @@
 ---
 title: 利用 SSH 连接 Termux
-date: 2022-10-03 15:29:50
+description: Termux 的使用指南。
+icon: android
+isOriginal: false
+date: 2022-09-21 10:02:33
 category:
   - 应用
   - Termux
 tag:
   - 教程
-  - SSH
   - Termux
 ---
 
 ## 下载 Termux
 
 - [Github](https://github.com/termux/termux-app/releases/latest "Release · termux/termux-app")
-- [F-Droid](https://f-droid.org/en/packages/com.termux/ "Termux \| F-Droid")
+- [F-Droid](https://f-droid.org/en/packages/com.termux/ "Termux | F-Droid")
 
-> **提示**：可以前往 [Termux](https://termux.dev/ "Termux \| The main termux site and help pages.") 官网了解更多信息及帮助。
+:::tip
+可以前往 [Termux](https://termux.dev/ "Termux | The main termux site and help pages.") 官网了解更多信息及帮助。
+:::
 
 ## 更新软件包
 
@@ -23,26 +27,32 @@ tag:
 pkg update && pkg upgrade -y
 ```
 
-> **注意**：若安装途中出现以下提示：
->
-> ```txt
-> Configuration file '/data/data/con.termux/files/path_to_file'
-> ==> File on system created by you or by a script.
-> ==> File also in package provided by package maintainer.
->   What would you like to do about it ? Your options are:
->    Y or I  : install the package maintainer's version
->    N or O  : keep your current-installed version
->      D     : show the difference between the versions
->      Z     : start a shell to examine the situation
-> The default action is to keep your current version.
-> *** filename (Y/I/N/O/D/Z) [Default=N] ?
-> ```
->
-> 输入 `Y` 回车即可。
+:::warning
 
-### 连接 Termux（可选）
+若安装途中出现以下提示：
 
-> **注意**：本步骤将会使 Termux 与其他设备相连，方便在终端输入并执行命令。若没有这种需求，可跳过此步。
+```console
+Configuration file '/data/data/con.termux/files/path_to_file'
+==> File on system created by you or by a script.
+==> File also in package provided by package maintainer.
+  What would you like to do about it ? Your options are:
+   Y or I  : install the package maintainer's version
+   N or O  : keep your current-installed version
+     D     : show the difference between the versions
+     Z     : start a shell to examine the situation
+The default action is to keep your current version.
+*** filename (Y/I/N/O/D/Z) [Default=N] ?
+```
+
+输入 <kbd>Y</kbd> 并 <kbd>↲ Enter</kbd> 即可。
+
+:::
+
+### 连接 Termux-可选
+
+:::warning
+本步骤将会使 Termux 与其他设备相连，方便在终端输入并执行命令。若没有这种需求，可跳过此步。
+:::
 
 #### 获取 IP
 
@@ -57,7 +67,9 @@ ifconfig
 1. 找到 `wlan0`。
 2. 复制 `192.168.*.*`（类似如 `192.168.1.1`）。
 
-> **注意**：不是 `192.168.*.255`，255 结尾的为广播地址。
+:::warning
+不是 `192.168.*.255`，255 结尾的为广播地址。
+:::
 
 ### 获取用户名
 
@@ -89,13 +101,17 @@ whoami
 ssh-keygen -t rsa
 ```
 
-> **注意**：在生成密钥对过程中，会询问用户生成密钥路径及密钥密码，此时可以直接回车使用默认设置。如下所示：
->
-> ```txt
-> Enter file in which to save the key (/root/.ssh/id_rsa): <Enter>
-> Enter passphrase (empty for no passphrase): <Enter>
-> Enter same passphrase again: <Enter>
-> ```
+:::warning
+
+在生成密钥对过程中，会询问用户生成密钥路径及密钥密码，此时可以直接 <kbd>↲ Enter</kbd> 使用默认设置。如下所示：
+
+```console
+Enter file in which to save the key (/root/.ssh/id_rsa): <Enter>
+Enter passphrase (empty for no passphrase): <Enter>
+Enter same passphrase again: <Enter>
+```
+
+:::
 
 #### 使用公钥
 
@@ -115,7 +131,7 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
    将查看私钥时获得的私钥内容复制并传输给其他设备。私钥内容大致如下：
 
-   ```txt
+   ```console
    -----BEGIN OPENSSH PRIVATE KEY-----
    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABlwAAAAdzc2gtcn
    ...
@@ -143,9 +159,13 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
 - Windows 端
 
-  > **注意**：以下演示皆在 PowerShell 中运行，若使用其它软件请以其它软件教程为准。
-  >
-  > **注意**：请在命令行输入 `ssh` 确保你的 Windows 安装了 OpenSSH。若没有安装，请前往“设置 > 应用 > 可选功能”添加可选功能 OpenSSH 客户端，或使用管理员权限打开 PowerShell 并输入 `DISM.exe /Online /Add-Capability /CapabilityName:OpenSSH.Client` 安装。
+  :::warning
+  以下演示皆在 PowerShell 中运行，若使用其它软件请以其它软件教程为准。
+  :::
+
+  :::warning
+  请在命令行输入 `ssh` 确保你的 Windows 安装了 OpenSSH。若没有安装，请前往“设置 > 应用 > 可选功能”添加可选功能 OpenSSH 客户端，或使用管理员权限打开 PowerShell 并输入 `DISM.exe /Online /Add-Capability /CapabilityName:OpenSSH.Client` 安装。
+  :::
 
   运行以下命令生成 `id_rsa` 文件（具体可以看生成密钥对）：
 
@@ -155,9 +175,13 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 
   使用文本编辑器打开 `id_rsa` （默认路径为 `%HomePath%/.ssh/id_rsa`）并将上一步获取的私钥粘贴至此处。
 
-  > **提示**：这一步生成的 `id_rsa.pub` 文件可以删除。
-  >
-  > **注意**：若手动在 `%HomePath%` 下创建 `.ssh/id_rsa` 文件，请务必注意相关的文件权限问题。若出现权限问题，请右击 `.ssh` 文件夹，选择“属性”，进入“安全”选项卡，点击“高级”，确保“所有者”为“当前用户”（即你登录时使用的用户），以及“权限条目”为“SYSTEM”、“Administrators”及“当前用户”且其“访问”权限为“完全控制”（双击条目可进入修改），并“启用继承”，`id_rsa` 文件权限也大致与 `.ssh` 文件夹相同，但它的“权限条目”中的“当前用户”的“访问”权限为“修改”、“读取和执行”、“读取”和“写入”四项，且“禁用继承”。
+  :::tip
+  这一步生成的 `id_rsa.pub` 文件可以删除。
+  :::
+
+  :::warning
+  若手动在 `%HomePath%` 下创建 `.ssh/id_rsa` 文件，请务必注意相关的文件权限问题。若出现权限问题，请右击 `.ssh` 文件夹，选择“属性”，进入“安全”选项卡，点击“高级”，确保“所有者”为“当前用户”（即你登录时使用的用户），以及“权限条目”为“SYSTEM”、“Administrators”及“当前用户”且其“访问”权限为“完全控制”（双击条目可进入修改），并“启用继承”，`id_rsa` 文件权限也大致与 `.ssh` 文件夹相同，但它的“权限条目”中的“当前用户”的“访问”权限为“修改”、“读取和执行”、“读取”和“写入”四项，且“禁用继承”。
+  :::
 
 #### 保存连接
 
@@ -177,7 +201,9 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
     IdentityFile ~/.ssh/id_rsa
   ```
 
-  > **注意**：`HostName` 为之前获取的 ef2IP（看这里），`User` 为之前获取的用户名（在这里）。
+  :::warning
+  `HostName` 为之前获取的 IP（看[这里](#获取-ip)），`User` 为之前获取的用户名（在[这里](#获取用户名)）。
+  :::
 
 #### 使用连接
 
@@ -185,7 +211,9 @@ cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ssh termux
 ```
 
-> **注意**：当出现 `Are you sure you want to continue connecting (yes/no/[fingerprint])?` 时输入 `yes` 并回车即可。
+:::warning
+当出现 `Are you sure you want to continue connecting (yes/no/[fingerprint])?` 时输入 `yes` 并 <kbd>↲ Enter</kbd> 即可。
+:::
 
 如果连上了的话，那么恭喜你成功了！此后的操作皆可在其他设备上执行。
 
@@ -199,7 +227,9 @@ pkg install proot-distro -y
 
 ### 安装 Ubuntu
 
-> **注意**：此处以 Ubuntu 为例，按理来说其它系统大同小异。
+:::warning
+此处以 Ubuntu 为例，按理来说其它系统大同小异。
+:::
 
 ```sh
 proot-distro install ubuntu
@@ -211,7 +241,9 @@ proot-distro install ubuntu
 proot-distro login ubuntu
 ```
 
-> **注意**：以后进入 Linux 都需执行此命令。
+:::warning
+以后进入 Linux 都需执行此命令。
+:::
 
 ## 安装系统组件
 
@@ -220,9 +252,11 @@ apt update && apt upgrade -y
 apt install sudo vim -y
 ```
 
-## 切换用户（可选）
+## 切换用户-可选
 
-> **注意**：添加用户是为了安全，当然你也可以跳过。
+:::warning
+添加用户是为了安全，当然你也可以跳过。
+:::
 
 ### 设置 Root 用户密码
 
@@ -230,7 +264,7 @@ apt install sudo vim -y
 passwd
 ```
 
-而后输入密码回车再重复输入密码回车即可。
+而后输入密码 <kbd>↲ Enter</kbd> 再重复输入密码 <kbd>↲ Enter</kbd> 即可。
 
 ### 新建用户
 
@@ -242,7 +276,7 @@ adduser username
 
 再之后就会让你输入用户信息，如下参考输入：
 
-```txt
+```console
 Enter the new value, or press ENTER for the default
         Full Name []: First Last
         Room Number []: X
@@ -259,7 +293,7 @@ usermod shuery -aG sudo
 vim /etc/sudoers
 ```
 
-此时输入 `/` 进入字符串搜索模式，输入 `User privilege specification` 并回车以跳转到用户权限设置处，找到 `root ALL=(ALL:ALL) ALL`，并在下一行输入 `username ALL=(ALL:ALL) ALL`。
+此时输入 `/` 进入字符串搜索模式，输入 `User privilege specification` 并 <kbd>↲ Enter</kbd> 以跳转到用户权限设置处，找到 `root ALL=(ALL:ALL) ALL`，并在下一行输入 `username ALL=(ALL:ALL) ALL`。
 
 ### 更换用户
 

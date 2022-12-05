@@ -2,7 +2,7 @@
 title: 利用 SSH 连接 Linux
 icon: linux
 description: 使用 OpenSSH 连接 Linux
-date: 2022-05-07 10:58:46
+date: 2020-05-07 10:58:46
 category:
   - 系统
   - Linux
@@ -88,7 +88,7 @@ touch ~/.ssh/config
   ```
 
   :::tip
-  在 Windows 上使用带有 `~` 的路径时请在输入完后使用“<kbd>Tab</kbd>”建进行自动补全。
+  在 Windows 上使用带有 `~` 的路径时请在输入完后使用 <kbd>Tab</kbd> 建进行自动补全。
   :::
 
   填入以下配置

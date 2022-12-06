@@ -1,7 +1,7 @@
 ---
 title: 利用 SSH 连接 Termux
 description: Termux 的使用指南。
-icon: android
+icon: article
 isOriginal: false
 date: 2022-09-21 10:02:33
 category:

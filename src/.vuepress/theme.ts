@@ -72,15 +72,15 @@ export default hopeTheme({
     // If you don’t need comment feature, you can remove following option
     // The following config is for demo ONLY, if you need comment feature, please generate and use your own config, see comment plugin documentation for details.
     // To avoid disturbing the theme developer and consuming his resources, please DO NOT use the following config directly in your production environment!!!!!
-    // comment: {
+    comment: {
       /**
        * Using Giscus
        */
-      // provider: "Giscus",
-      // repo: "vuepress-theme-hope/giscus-discussions",
-      // repoId: "R_kgDOG_Pt2A",
-      // category: "Announcements",
-      // categoryId: "DIC_kwDOG_Pt2M4COD69",
+      provider: "Giscus",
+      repo: "Shuery-Shuai/Share_Life",
+      repoId: "R_kgDOIDvx_w",
+      category: "Announcements",
+      categoryId: "DIC_kwDOIDvx_84CS7qb",
 
       /**
        * Using Twikoo
@@ -93,7 +93,7 @@ export default hopeTheme({
        */
       // provider: "Waline",
       // serverURL: "https://vuepress-theme-hope-comment.vercel.app",
-    // },
+    },
 
     // Disable features you don’t want here
     mdEnhance: {

@@ -22,6 +22,7 @@ export default hopeTheme({
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
   blog: {
+    avatar: "/assets/avator.svg",
     medias: {
       BiliBili: "https://bilibili.com",
       Email: "https://outlook.com",

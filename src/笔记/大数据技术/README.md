@@ -1,8 +1,9 @@
 ---
 title: 大数据技术
-icon: folder
+icon: any
 author: 锐毅
 date: 2021-10-22 21:45:48
+index: false
 category:
   - 学习
   - 计算机

@@ -1,7 +1,8 @@
 ---
 title: 英语
-icon: folder
+icon: language
 date: 2022-10-22 08:00:56
+index: false
 category:
   - 学习
   - 英语

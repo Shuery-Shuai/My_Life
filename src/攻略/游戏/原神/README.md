@@ -1,16 +1,9 @@
 ---
-title: 原神攻略
+title: 原神
 description: 米哈游旗下游戏原神攻略。
-icon: folder
-isOriginal: true
+icon: sitemap
 date: 2021-06-04 10:02:33
-category:
-  - 原神
-  - 米游社活动
-tag:
-  - 攻略
-  - 原神
-  - 游戏
+index: false
 article: false
 ---
 

@@ -1,8 +1,9 @@
 ---
 title: 单词本
-icon: folder
+icon: list
 author: 锐毅
 date: 2022-10-22
+index: false
 category:
   - 学习
   - 英语

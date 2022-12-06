@@ -1,8 +1,9 @@
 ---
 title: 笔记
-icon: folder
+icon: note
 author: 锐毅
 date: 2022-10-22
+index: false
 category:
   - 学习
 tag:

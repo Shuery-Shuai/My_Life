@@ -2,7 +2,7 @@
 home: true
 layout: Blog
 icon: home
-title: 主页
+title: 生活记录分享馆
 heroImage: /logo.svg
 heroAlt: 雪梨
 heroText: 生活记录分享馆

@@ -1,6 +1,6 @@
 ---
 title: 利用 SSH 连接 Termux
-description: Termux 的使用指南。
+description: 使用 OpenSSH 连接 Termux 指南。
 icon: article
 isOriginal: false
 date: 2022-09-21 10:02:33

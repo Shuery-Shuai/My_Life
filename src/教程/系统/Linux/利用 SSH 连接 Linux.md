@@ -1,7 +1,7 @@
 ---
 title: 利用 SSH 连接 Linux
 icon: article
-description: 使用 OpenSSH 连接 Linux
+description: 使用 OpenSSH 连接 Linux。
 date: 2020-05-07 10:58:46
 category:
   - 系统

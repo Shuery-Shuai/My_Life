@@ -5,11 +5,14 @@ icon: article
 isOriginal: false
 date: 2022-09-21 10:02:33
 category:
+  - 教程
   - 应用
   - Termux
 tag:
   - 教程
   - Termux
+  - Android
+  - Linux
 ---
 
 ## 下载 Termux

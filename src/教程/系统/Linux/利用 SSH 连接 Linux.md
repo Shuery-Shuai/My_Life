@@ -4,12 +4,13 @@ icon: article
 description: 使用 OpenSSH 连接 Linux。
 date: 2020-05-07 10:58:46
 category:
+  - 教程
   - 系统
   - Linux
 tag:
   - 教程
-  - SSH
   - Linux
+  - SSH
 ---
 
 ## 安装 OpenSSH

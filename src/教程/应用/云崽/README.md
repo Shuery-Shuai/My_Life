@@ -6,11 +6,13 @@ icon: anonymous
 date: 2022-12-04 19:59:43
 index: false
 category:
+  - 教程
   - 应用
   - 云崽
 tag:
-  - 简介
+  - 教程
   - 云崽
+  - Linux
 article: false
 ---
 

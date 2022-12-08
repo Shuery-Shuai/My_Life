@@ -5,9 +5,9 @@ author: 锐毅
 date: 2022-10-22
 index: false
 category:
-  - 学习
+  - 笔记
 tag:
-  - 学习
+  - 笔记
 article: false
 ---
 

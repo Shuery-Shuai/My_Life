@@ -4,6 +4,7 @@ icon: article
 description: Linux 系统新建用户。
 date: 2020-05-06 11:54:47
 category:
+  - 教程
   - 系统
   - Linux
 tag:

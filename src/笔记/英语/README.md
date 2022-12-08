@@ -4,12 +4,10 @@ icon: language
 date: 2022-10-22 08:00:56
 index: false
 category:
-  - 学习
+  - 笔记
   - 英语
-  - 单词
 tag:
-  - 学习
-  - 文学
+  - 笔记
   - 英语
 article: false
 ---

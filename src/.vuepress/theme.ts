@@ -67,7 +67,7 @@ export default hopeTheme({
 
   plugins: {
     blog: {
-      autoExcerpt: true,
+      excerptLength: false,
     },
 
     // If you don’t need comment feature, you can remove following option
@@ -102,11 +102,12 @@ export default hopeTheme({
       attrs: true,
       chart: true,
       codetabs: true,
-      container: true,
       demo: true,
       echarts: true,
       flowchart: true,
+      footnote: true,
       gfm: true,
+      hint: true,
       imgLazyload: true,
       imgMark: true,
       imgSize: true,
@@ -117,7 +118,7 @@ export default hopeTheme({
       playground: {
         presets: ["ts", "vue"],
       },
-      presentation: ["highlight", "math", "search", "notes", "zoom"],
+      revealJs: true,
       stylize: [
         {
           matcher: "Recommended",
@@ -198,6 +199,28 @@ export default hopeTheme({
           },
         ],
       },
+    },
+
+    searchPro: {
+      // 索引内容
+      indexContent: true,
+      // 自动提示搜索建议
+      autoSuggestions: true,
+      // 为分类和标签添加索引
+      customFields: [
+        {
+          getter: (page) => page.frontmatter.category,
+          formatter: {
+            "/": "分类：$content",
+          },
+        },
+        {
+          getter: (page) => page.frontmatter.tag,
+          formatter: {
+            "/": "标签：$content",
+          },
+        },
+      ],
     },
   },
 });
